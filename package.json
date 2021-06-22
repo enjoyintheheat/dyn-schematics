@@ -1,6 +1,6 @@
 {
-  "name": "@nestjsplus/dyn-schematics",
-  "version": "1.0.12",
+  "name": "@enjoyintheheat/dyn-schematics",
+  "version": "1.0.13",
   "description": "NestJS Dynamic Module Schematics for @nestjs/cli",
   "author": "John Biundo <johnfbiundo@gmail.com>",
   "license": "MIT",
@@ -14,20 +14,21 @@
   },
   "scripts": {
     "build": "npm run move && tsc -p tsconfig.json",
-    "move": "rm -rf lib && mkdir -p lib/schematics && cp -ar ./src/schematics/* lib/schematics && mkdir -p lib/utils && cp -ar ./src/utils/* lib/utils && cp ./src/defaults.ts lib",
+    "move": "rm -rf lib && mkdir -p lib/schematics && cp -a ./src/schematics/* lib/schematics && mkdir -p lib/utils && cp -a ./src/utils/* lib/utils && cp ./src/defaults.ts lib",
     "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nestjsplus/dyn-schematics"
+    "url": "git+https://github.com/enjoyintheheat/dyn-schematics"
   },
   "contributors": [
-    "John Biundo"
+    "John Biundo",
+    "Evgeniy Vdovin"
   ],
   "bugs": {
-    "url": "https://github.com/nestjsplus/dyn-schematics/issues"
+    "url": "https://github.com/enjoyintheheat/dyn-schematics/issues"
   },
-  "homepage": "https://github.com/nestjsplus/dyn-schematics/#README",
+  "homepage": "https://github.com/enjoyintheheat/dyn-schematics/#README",
   "readmeFilename": "README.md",
   "dependencies": {
     "@angular-devkit/core": "8.3.4",
